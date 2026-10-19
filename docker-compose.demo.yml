@@ -1,0 +1,22 @@
+# PB Conecta — modo demo (frontend compilado + Gunicorn)
+# Uso: docker compose -f docker-compose.yml -f docker-compose.demo.yml up --build
+
+services:
+  backend:
+    environment:
+      DJANGO_DEBUG: "0"
+    command: gunicorn config.wsgi:application --bind 0.0.0.0:8000 --workers 3
+
+  frontend:
+    profiles: ["solo-desarrollo"]   # En demo el frontend se compila dentro de la imagen de nginx
+
+  nginx:
+    image: pbconecta-nginx-demo
+    build:
+      context: .
+      dockerfile: nginx/Dockerfile.demo
+    volumes: !override
+      - media:/srv/media:ro
+      - static:/srv/static:ro
+    depends_on: !override
+      - backend

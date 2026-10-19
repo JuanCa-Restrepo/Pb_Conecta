@@ -1,0 +1,5 @@
+# Los scripts que corren dentro de Linux deben conservar finales de línea LF
+*.sh   text eol=lf
+*.conf text eol=lf
+*.sql  text eol=lf
+Dockerfile* text eol=lf

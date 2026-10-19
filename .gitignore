@@ -1,0 +1,27 @@
+# Secretos
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+backend/media/
+backend/staticfiles/
+
+# Node
+node_modules/
+frontend/dist/
+
+# Editores y sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Respaldos
+backups/
+
+# Temporales de pruebas
+.prueba/
+.tests.log
+*.log
