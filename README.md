@@ -92,6 +92,8 @@ El detalle de cada requerimiento está en [`docs/01-requerimientos.md`](docs/01-
 | [`docs/01-requerimientos.md`](docs/01-requerimientos.md) | Análisis, actores, requerimientos funcionales y no funcionales, reglas de negocio, decisiones |
 | [`docs/02-arquitectura.md`](docs/02-arquitectura.md) | Contenedores, capas, seguridad, búsqueda, afinidad, API, estructura del repositorio |
 | [`docs/03-modelo-datos.md`](docs/03-modelo-datos.md) | Diagramas entidad-relación, diccionario de datos y cómo se garantiza cada regla |
+| [`docs/04-despliegue.md`](docs/04-despliegue.md) | Cómo publicarlo: túnel para demos, servidor en la nube, HTTPS, correos reales, respaldos y datos personales |
+| [`docs/05-manual-de-uso.md`](docs/05-manual-de-uso.md) | Manual de uso por rol: estudiante, empresa, oficina de prácticas y superadministrador |
 
 ---
 
@@ -112,7 +114,7 @@ pb-conecta/
 ├── frontend/                   # React + Vite + TypeScript + MUI
 │   └── src/                    # api, auth, layouts, pages, components
 ├── scripts/                    # Copia de seguridad y restauración
-└── docs/                       # Requerimientos, arquitectura, modelo de datos
+└── docs/                       # Requerimientos, arquitectura, modelo de datos, despliegue, manual
 ```
 
 ---
